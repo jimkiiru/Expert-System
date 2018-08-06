@@ -1,0 +1,166 @@
+body
+{
+	height: 100%;
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
+}
+
+#background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header-image{
+  z-index: -999;
+  height: 100px;
+  min-width: 1024px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+h1{
+
+color:#ffffff;
+font-size:40px;
+padding-left:40%;
+padding-top:20px;
+margin-top: 1px;	
+}
+
+.loginUserDetails{
+	float:right;
+	
+	padding-top:10px;
+}
+.boxTitle{
+	background-color:#9fb6f2;
+	height:30px;
+	border:1px thick #4f8df7;;
+}
+
+.loginDiv{
+	width:300px;
+	height:120px;
+	margin-left:40%;
+	border:1px solid #ccc;
+	color:#ffffff;
+	background-image:url('../images/loginBackground.jpg');	
+	 
+}
+
+.chatDiv{
+	
+	
+	width:265px;
+	float :right;
+	margin-right :2px;
+}
+
+.allChatDivs{
+	
+	right :0px;
+	bottom :0px;
+	position:absolute;
+	z-index:9000;
+	
+	height:auto;
+
+	
+}
+.chatDivTitle{
+	height:20px;
+	width:262px;
+	background-color:#9fb6f2;
+	margin-left:3px ;	
+}
+
+.onlineGreen{
+	margin-top: 5px;
+	float:left;
+	width:8%;
+}
+
+.onlineUsersDIV {
+	float:left;
+	width:200px;
+	background-color:#b0b0ff;
+	margin-left: 10px;
+	
+}
+ 
+.onlineUsersDIV ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border:1px solid #ccc;
+  height:330px;
+	overflow-y:auto;
+}
+
+ 
+.onlineUsersDIV li {
+  font: 200 15px/1.5 Helvetica, Verdana, sans-serif;
+  
+}
+ 
+.onlineUsersDIV li:last-child {
+  border: none;
+}
+ 
+.onlineUsersDIV li a {
+  text-decoration: none;
+  color: #000040;;
+  display: block;
+  width: 85%;
+  padding-left:1px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+.onlineUsersDIV li a:hover {
+  background: #f0fcff;
+}
+ 
+ 
+.groupChat{
+	margin-left: 2px;
+	float:left;
+	width:710px;
+}
+
+.chatHistory{
+
+width: 262px;	
+}
+.chatBox{
+width: 262px;
+}
+
+.groupChatBox{
+	margin-left: 2px;
+	float:left;
+	width:710px;
+}
+
+.container{
+	display:none;	
+	width: 100%;	
+}
+
+.highlightColor{
+	background-color:#ff8000;
+}
+

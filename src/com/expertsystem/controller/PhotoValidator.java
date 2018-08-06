@@ -1,0 +1,26 @@
+package com.expertsystem.controller;
+import org.springframework.stereotype.Component;
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.expertsystem.model.FarmerModel;
+
+
+@Component("sendPhotoValidator")
+public class PhotoValidator implements Validator
+{
+	@SuppressWarnings("unchecked")
+	@Override
+	public boolean supports(Class clazz)
+	{
+		return FarmerModel.class.isAssignableFrom(clazz);
+	}
+
+	@Override
+	public void validate(Object model, Errors errors)
+	{
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "photoname","required.photoname", "Photo is required");
+	}
+
+}
